@@ -38,6 +38,7 @@ describe("getAPIKey", () => {
 
     const result = getAPIKey(headers);
 
-    expect(result).toBe("wrong-key");  });
+    expect(result).toBe("my-secret-key");
+  });
 
 });
