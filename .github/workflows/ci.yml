@@ -41,4 +41,4 @@ jobs:
         run: npm run format:check
 
       - name: Run linting      # ⚡ أضفنا هذه الخطوة
-        run: npm run lint
+        run: npm run lint -- --max-warnings=0
