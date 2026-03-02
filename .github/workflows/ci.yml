@@ -39,3 +39,6 @@ jobs:
 
       - name: Check formatting
         run: npm run format:check
+
+      - name: Run linting      # ⚡ أضفنا هذه الخطوة
+        run: npm run lint
