@@ -44,7 +44,7 @@ if (db) {
 //   // and is called nowhere
 // }
 v1Router.get("/healthz", handlerReadiness);
-const x = 1;
+
 app.use("/v1", v1Router);
 
 app.listen(config.api.port, () => {
