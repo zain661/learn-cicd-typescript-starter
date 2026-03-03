@@ -23,14 +23,19 @@ jobs:
       - name: Build app
         run: npm run build
 
-      # 👇 الجديد من هنا
-
+      # ✅ Authenticate to Google Cloud
       - name: Authenticate to GCP
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      # ✅ Install gcloud and set project
+      - name: Setup gcloud
         uses: google-github-actions/setup-gcloud@v2
         with:
-          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           project_id: notely-489020
 
+      # ✅ Build & push image to Artifact Registry
       - name: Build and push image to Artifact Registry
         run: |
           gcloud builds submit \
