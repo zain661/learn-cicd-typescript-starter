@@ -6,12 +6,12 @@ let conn = undefined;
 
 if (config.db.url) {
   conn = drizzle({
-  connection: {
-    url: config.db.url,
-    authToken: config.db.authToken,
-  },
-  schema: schema,
-});
+    connection: {
+      url: config.db.url,
+      authToken: config.db.authToken,
+    },
+    schema: schema,
+  });
   console.log("Connected to database!");
 } else {
   console.log("DATABASE_URL environment variable is not set");
