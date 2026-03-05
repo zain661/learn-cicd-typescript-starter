@@ -3,3 +3,7 @@ coverage/
 dist/
 .env
 .vscode
+google-cloud-cli-linux-x86_64.tar.gz
+google-cloud-sdk/
+learn-cicd-typescript-starter@1.0.0
+drizzle-kit
