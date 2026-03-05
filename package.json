@@ -22,7 +22,8 @@
     "@types/express": "^5.0.0",
     "@types/node": "^22.9.0",
     "@vitest/coverage-v8": "^4.0.18",
-    "drizzle-kit": "^0.28.1",
+    "drizzle-kit": "^0.31.9",
+    "drizzle-orm": "^0.45.1",
     "eslint": "^10.0.2",
     "eslint-plugin-security": "^4.0.0",
     "globals": "^15.15.0",
@@ -36,7 +37,6 @@
     "@libsql/client": "^0.14.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "drizzle-orm": "^0.36.2",
     "express": "^4.21.1",
     "uuid": "^11.0.3"
   },
