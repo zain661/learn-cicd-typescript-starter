@@ -47,6 +47,6 @@ jobs:
            --image us-central1-docker.pkg.dev/PROJECT_ID/REPO_NAME/notely:${{ github.sha }} \
            --region us-central1 \
            --allow-unauthenticated \
-           --project PROJECT_ID \
+           --project notely-489020 \
            --max-instances=4
   
